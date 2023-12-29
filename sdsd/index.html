@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL JADIDA</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Your JavaScript code here
+
+    // Function to show the floating window
+    function showFloatingWindow() {
+      const floatingWindow = document.getElementById('floating-window');
+      floatingWindow.style.display = 'block';
+    }
+
+    // Function to close the floating window
+    function closeFloatingWindow() {
+      const floatingWindow = document.getElementById('floating-window');
+      floatingWindow.style.display = 'none';
+    }
+
+    // Show the floating window immediately
+    showFloatingWindow();
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>EL JADIDA MY HOME</h1>
+  </header>
+  <div id="floating-window">
+    <p>Hello!</p>
+    <button id="close-window-btn" onclick="closeFloatingWindow()">Close</button>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Search</a></li>
+      <li><a href="login/">Login</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="search-container">
+    <input type="text" class="search-input" placeholder="Search for a place...">
+    <button class="search-button">Search</button>
+  </section>
+
+  <section class="results-container">
+    <!-- Sample Place Cards -->
+    <div class="place-card">
+      <img class="place-image" src="https://placekitten.com/200/150" alt="Place 1">
+      <h2>Place 1</h2>
+      <p>Description of Place 1.</p>
+    </div>
+
+    <div class="place-card">
+      <img class="place-image" src="https://placekitten.com/201/150" alt="Place 2">
+      <h2>Place 2</h2>
+      <p>Description of Place 2.</p>
+    </div>
+
+    <!-- Add more place cards as needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2023 ABDELLAH STUDIO CODES COPYRIGHT</p>
+  </footer>
+</body>
+
+</html>
